@@ -3,21 +3,27 @@
   "version": "0.1.0",
   "main": "public/javascripts/app.js",
   "dependencies": {
-    "chaplin": "~0.11.3",
+    "chaplin": "0.11.*",
     "console-polyfill": "~0.1.0",
     "lodash": "~2.0.0",
     "jquery": "~2.0.2",
     "normalize-css": "~2.1.2",
-    "h5bp-helpers": "~0.1.0"
+    "h5bp-helpers": "~0.1.0",
+    "backbone.stickit": "0.6.3"
   },
   "overrides": {
     "backbone": {
       "dependencies": {
         "lodash": "*",
-        "jquery": "*",
-        "fastclick": "~0.6.10"
+        "jquery": "*"
       },
       "main": "backbone.js"
+    },
+    "backbone.stickit":{
+      "dependencies": {
+        "backbone": "*"
+      },
+      "main": "backbone.stickit.js"
     }
   },
   "devDependencies": {
