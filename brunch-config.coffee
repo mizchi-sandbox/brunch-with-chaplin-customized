@@ -11,3 +11,7 @@ exports.config =
 
     templates:
       joinTo: 'javascripts/app.js'
+
+  plugins:
+    sass:
+      debug: 'comments' # or set to 'debug' for the FireSass-style output

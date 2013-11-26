@@ -20,7 +20,10 @@
     "handlebars-brunch": ">= 1.0 < 1.8",
     "uglify-js-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
-    "auto-reload-brunch": ">= 1.0 < 1.8"
+    "auto-reload-brunch": ">= 1.0 < 1.8",
+    "sass-brunch": "~1.7.2",
+    "jade-brunch": "~1.7.3",
+    "static-jade-brunch": "git+ssh://git@github.com:ilkosta/static-jade-brunch.git"
   },
   "devDependencies": {}
 }
