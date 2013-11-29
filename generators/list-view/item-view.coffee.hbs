@@ -1,0 +1,6 @@
+View     = require 'views/base/view'
+template = require('templates/{{name}}-item')
+
+module.exports = class {{#camelize}}{{name}}{{/camelize}}ItemView extends View
+  container: '.{{name}}-item-list'
+  template: template

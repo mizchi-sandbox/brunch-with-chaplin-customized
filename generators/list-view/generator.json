@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "from": "item-view.coffee.hbs",
+      "to": "app/views/{{name}}-item-view.coffee"
+    },
+    {
+      "from": "list-view.coffee.hbs",
+      "to": "app/views/{{name}}-list-view.coffee"
+    },
+    {
+      "from": "item-template.coffee.hbs",
+      "to": "app/templates/{{name}}-item.jade"
+    },
+    {
+      "from": "view-collection.coffee.hbs",
+      "to": "app/view-models/{{name}}-view-collection.coffee"
+    },
+    {
+      "from": "view-model.coffee.hbs",
+      "to": "app/view-models/{{name}}-item-view-model.coffee"
+    }
+  ]
+}
