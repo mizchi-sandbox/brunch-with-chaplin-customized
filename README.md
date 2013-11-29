@@ -1,65 +1,38 @@
-# Brunch with Chaplin
-![Logo](https://f.cloud.github.com/assets/574696/1364116/85101226-3838-11e3-9864-128b82c1fb8a.png)
+# Brunch with Chaplin customized by mizchi
 
-This is HTML5 application, built with
-[Brunch](http://brunch.io) and [Chaplin](http://chaplinjs.org).
+This repository is brunch skeleton.
+See detail https://github.com/chaplinjs/chaplin
 
 ## Installation
-Clone this repo manually with git or use `brunch new gh:paulmillr/brunch-with-chaplin`
 
-## Getting started
-* Install (if you don't have them):
-    * [Node.js](http://nodejs.org): `brew install node` on OS X
-    * [Brunch](http://brunch.io): `npm install -g brunch`
-    * [Bower](http://bower.io): `npm install -g bower`
-    * Brunch plugins and Bower dependencies: `npm install & bower install`
-* Run:
-    * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `brunch build --production` — builds minified project for production
-* Learn:
-    * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
-    * Place static files you want to be copied from `app/assets/` to `public/`.
-    * [Brunch site](http://brunch.io), [Chaplin site](http://chaplinjs.org)
-
----------------
-
-# For newcomers
-
-Brunch with Chaplin is a skeleton (boilerplate) for [Brunch](http://brunch.io)
-based on [Chaplin](http://chaplinjs.org) architecture. Requires Brunch 1.7+.
-
-Example application built with the skeleton:
-[Ost.io](https://github.com/paulmillr/ostio).
-
-This branch does not contain ready-to-use test environment.
-If you want take a look how tests can be used, see `with-tests` git branch.
-
-## Difference from Chaplin Boilerplate
-[Chaplin Boilerplate](https://github.com/chaplinjs/chaplin-boilerplate)
-is a official boilerplate all for chaplin. This skeleton is almost the same,
-except a few changes:
-
-* Added Header.
-* CommonJS is used instead of AMD, because it's easier to use & debug.
+```
+$ mkdir myapp; cd myapp
+$ brunch new git@github.com:mizchi/brunch-chaplin-my-customized.git
+```
 
 ## Features
-* HTML5Boilerplate html & css are included.
-* CoffeeScript + Stylus + Handlebars as app languages
-(you can change this to anything you want)
-* Backbone as main MVC/MVP library, Chaplin as meta-framework.
-* Support of IE8 and up.
-* Cross-module communication using the Mediator and Publish/Subscribe patterns
-* Controllers for managing individual UI views
-* Rails-style routes which map URLs to controller actions
-* An application view as dispatcher and view manager
-* Extended model, view and collection classes to avoid repetition and
-enforce conventions
-* Strict memory management and object disposal
-* A collection with additional manipulation methods for smarter change events
-* A collection view for easy and intelligent list rendering
 
-## Authentication
-If you build an application with authentication, there are some useful abstractions for it out there: https://github.com/chaplinjs/chaplin-auth.
+* CoffeeScript
+* Jade
+* Sass
+* MVVM style by Backbone.stickit
+* Mocha testing framework
+
+## Getting started
+
+### Run
+
+`brunch watch --server`
+
+### Build
+
+`brunch build --production`
+
+## Test
+
+* `npm install -g mocha-phantomjs`
+* Add test target file name at `test/initialize.coffee`
+* `mocha-phantomjs public/test/index.html` or `npm test` (you need to build once before test)
 
 ## License
 The MIT license.
