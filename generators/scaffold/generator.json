@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "from": "controller.coffee.hbs",
+      "to": "app/controllers/{{name}}-controller.coffee"
+    },
+    {
+      "from": "controller-test.coffee.hbs",
+      "to": "test/controllers/{{name}}-controller-test.coffee"
+    },
+
+    {
+      "from": "view-model.coffee.hbs",
+      "to": "app/view-models/{{name}}-view-model.coffee"
+    },
+    {
+      "from": "view-model-test.coffee.hbs",
+      "to": "test/view-models/{{name}}-view-model-test.coffee"
+    },
+
+    {
+      "from": "view.coffee.hbs",
+      "to": "app/views/{{name}}/{{name}}-view.coffee"
+    },
+    {
+      "from": "view-test.coffee.hbs",
+      "to": "test/views/{{name}}/{{name}}-view-test.coffee"
+    },
+
+    {
+      "from": "template.hbs",
+      "to": "app/templates/{{name}}.jade"
+    }
+  ]
+}

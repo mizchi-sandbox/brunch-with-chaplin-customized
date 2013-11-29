@@ -1,0 +1,8 @@
+Controller = require 'controllers/base/controller'
+{{#camelize}}{{name}}{{/camelize}}ViewModel = require 'view-models/{{name}}-view-model'
+{{#camelize}}{{name}}{{/camelize}}View = require 'views/{{name}}/{{name}}-view'
+
+module.exports = class {{#camelize}}{{name}}{{/camelize}} extends Controller
+  index: ->
+    {{name}}ViewModel = new {{#camelize}}{{name}}{{/camelize}}ViewModel 
+    @view = @compose '{{name}}', {{#camelize}}{{name}}{{/camelize}}View, model: {{name}}ViewModel

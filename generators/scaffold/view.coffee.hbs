@@ -1,0 +1,6 @@
+View = require 'views/base/view'
+template = require 'templates/{{name}}'
+
+module.exports = class {{#camelize}}{{name}}{{/camelize}}View extends View
+  container: "#scene-root"
+  template: template
