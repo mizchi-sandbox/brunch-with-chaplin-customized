@@ -5,5 +5,9 @@ tests = [
 ]
 
 require 'namespace'
+
+for own k, v of require 'test/helpers'
+  window[k] = v
+
 for test in tests
   require test
