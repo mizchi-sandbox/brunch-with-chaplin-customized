@@ -2,11 +2,19 @@
   "files": [
     {
       "from": "item-view.coffee.hbs",
-      "to": "app/views/{{name}}-item-view.coffee"
+      "to": "app/views/{{$2}}/{{name}}-item-view.coffee"
+    },
+    {
+      "from": "item-view-test.coffee.hbs",
+      "to": "test/views/{{$2}}/{{name}}-item-view-test.coffee"
     },
     {
       "from": "list-view.coffee.hbs",
-      "to": "app/views/{{name}}-list-view.coffee"
+      "to": "app/views/{{$2}}/{{name}}-list-view.coffee"
+    },
+    {
+      "from": "list-view-test.coffee.hbs",
+      "to": "test/views/{{$2}}/{{name}}-list-view-test.coffee"
     },
     {
       "from": "item-template.coffee.hbs",
@@ -17,8 +25,16 @@
       "to": "app/view-models/{{name}}-view-collection.coffee"
     },
     {
-      "from": "view-model.coffee.hbs",
+      "from": "view-collection-test.coffee.hbs",
+      "to": "test/view-models/{{name}}-view-collection-test.coffee"
+    },
+    {
+      "from": "item-view-model.coffee.hbs",
       "to": "app/view-models/{{name}}-item-view-model.coffee"
+    },
+    {
+      "from": "item-view-model-test.coffee.hbs",
+      "to": "test/view-models/{{name}}-item-view-model-test.coffee"
     }
   ]
 }

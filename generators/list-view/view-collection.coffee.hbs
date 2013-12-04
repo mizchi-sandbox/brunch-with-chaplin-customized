@@ -1,4 +1,4 @@
 {{#camelize}}{{name}}{{/camelize}}ItemViewModel = require './{{name}}-item-view-model'
 ViewCollection = require 'view-models/base/view-collection'
-module.exports = class {{#camelize}}{{name}}{{/camelize}}ItemViewCollection extends ViewCollection
+module.exports = class {{#camelize}}{{name}}{{/camelize}}ViewCollection extends ViewCollection
   model: {{#camelize}}{{name}}{{/camelize}}ItemViewModel
