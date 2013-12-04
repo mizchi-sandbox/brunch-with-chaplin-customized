@@ -1,6 +1,6 @@
 Controller = require 'controllers/base/controller'
 HomeView = require 'views/home/home-view'
-HomeViewModel = require 'view-models/home-view-model'
+HomeViewModel = require 'view-models/home/home-view-model'
 
 module.exports = class HomeController extends Controller
   index: ->

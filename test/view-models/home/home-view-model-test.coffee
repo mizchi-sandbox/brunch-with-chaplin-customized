@@ -1,4 +1,4 @@
-HomeViewModel = require 'view-models/home-view-model'
+HomeViewModel = require 'view-models/home/home-view-model'
 
 describe 'HomeViewModel', ->
   it 'should be written'
