@@ -11,11 +11,11 @@
 
     {
       "from": "view-model.coffee.hbs",
-      "to": "app/view-models/{{name}}-view-model.coffee"
+      "to": "app/view-models/{{name}}/{{name}}-view-model.coffee"
     },
     {
       "from": "view-model-test.coffee.hbs",
-      "to": "test/view-models/{{name}}-view-model-test.coffee"
+      "to": "test/view-models/{{name}}/{{name}}-view-model-test.coffee"
     },
 
     {
@@ -29,7 +29,11 @@
 
     {
       "from": "template.hbs",
-      "to": "app/templates/{{name}}.jade"
+      "to": "app/templates/{{name}}/{{name}}.jade"
+    },
+    {
+      "from": "style.hbs",
+      "to": "app/styles/{{name}}/{{name}}.sass"
     }
   ]
 }
