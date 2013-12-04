@@ -23,6 +23,7 @@
     "auto-reload-brunch": ">= 1.0 < 1.8",
     "sass-brunch": "~1.7.2",
     "jade-brunch": "~1.7.3",
+    "inflection": "*",
     "static-jade-brunch": "git+ssh://git@github.com:ilkosta/static-jade-brunch.git"
   },
   "devDependencies": {}
