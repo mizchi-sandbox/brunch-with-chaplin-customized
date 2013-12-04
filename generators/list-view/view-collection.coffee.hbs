@@ -1,4 +1,4 @@
-{{#camelize}}{{name}}{{/camelize}}ItemViewModel = require './{{name}}-item-view-model'
+{{#classify-from-dash}}{{name}}{{/classify-from-dash}}ItemViewModel = require './{{name}}-item-view-model'
 ViewCollection = require 'view-models/base/view-collection'
-module.exports = class {{#camelize}}{{name}}{{/camelize}}ViewCollection extends ViewCollection
-  model: {{#camelize}}{{name}}{{/camelize}}ItemViewModel
+module.exports = class {{#classify-from-dash}}{{name}}{{/classify-from-dash}}ViewCollection extends ViewCollection
+  model: {{#classify-from-dash}}{{name}}{{/classify-from-dash}}ItemViewModel

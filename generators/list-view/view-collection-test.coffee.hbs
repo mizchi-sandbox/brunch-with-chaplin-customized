@@ -1,4 +1,4 @@
-{{#camelize}}{{name}}{{/camelize}}ViewCollection = require 'views-models/{{name}}-view-collection'
+{{#classify-from-dash}}{{name}}{{/classify-from-dash}}ViewCollection = require 'views-models/{{$2}}/{{name}}-view-collection'
 
-describe '{{#camelize}}{{name}}{{/camelize}}ViewCollection', ->
+describe '{{#classify-from-dash}}{{name}}{{/classify-from-dash}}ViewCollection', ->
   it 'should be written'

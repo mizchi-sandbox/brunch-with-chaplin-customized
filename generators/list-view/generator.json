@@ -18,23 +18,23 @@
     },
     {
       "from": "item-template.coffee.hbs",
-      "to": "app/templates/{{name}}-item.jade"
+      "to": "app/templates/{{$2}}/{{name}}-item.jade"
     },
     {
       "from": "view-collection.coffee.hbs",
-      "to": "app/view-models/{{name}}-view-collection.coffee"
+      "to": "app/view-models/{{$2}}/{{name}}-view-collection.coffee"
     },
     {
       "from": "view-collection-test.coffee.hbs",
-      "to": "test/view-models/{{name}}-view-collection-test.coffee"
+      "to": "test/view-models/{{$2}}/{{name}}-view-collection-test.coffee"
     },
     {
       "from": "item-view-model.coffee.hbs",
-      "to": "app/view-models/{{name}}-item-view-model.coffee"
+      "to": "app/view-models/{{$2}}/{{name}}-item-view-model.coffee"
     },
     {
       "from": "item-view-model-test.coffee.hbs",
-      "to": "test/view-models/{{name}}-item-view-model-test.coffee"
+      "to": "test/view-models/{{$2}}/{{name}}-item-view-model-test.coffee"
     }
   ]
 }

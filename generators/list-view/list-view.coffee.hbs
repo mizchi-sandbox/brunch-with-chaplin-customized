@@ -1,7 +1,7 @@
 CollectionView = require 'views/base/collection-view'
-{{#camelize}}{{name}}{{/camelize}}ItemView = require './{{name}}-item-view'
+{{#classify-from-dash}}{{name}}{{/classify-from-dash}}ItemView = require './{{name}}-item-view'
 
-module.exports = class {{#camelize}}{{name}}{{/camelize}}ListView extends CollectionView
+module.exports = class {{#classify-from-dash}}{{name}}{{/classify-from-dash}}ListView extends CollectionView
   container: '.{{name}}-item-list-container'
   className: '{{name}}-item-list'
-  itemView: {{#camelize}}{{name}}{{/camelize}}ItemView
+  itemView: {{#classify-from-dash}}{{name}}{{/classify-from-dash}}ItemView
